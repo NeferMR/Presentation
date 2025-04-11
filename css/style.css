@@ -1,0 +1,501 @@
+@font-face {
+  font-family: 'icomoon';
+  src:  url('../fonts/icomoon.eot?6rr8wa');
+  src:  url('../fonts/icomoon.eot?6rr8wa#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon.ttf?6rr8wa') format('truetype'),
+    url('../fonts/icomoon.woff?6rr8wa') format('woff'),
+    url('../fonts/icomoon.svg?6rr8wa#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  font-size: 1.5rem;
+  color: #fff;
+  height: 100%;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #274059;
+  color: #fff;
+}
+
+header img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+  zoom: 1.2;
+}
+
+header h1 {
+  font-size: 2.2rem;
+  font-weight: 400;
+  margin: 1rem 0;
+  font-family: "Kaushan Script", cursive;
+  transform: rotate(-10deg);
+  
+}
+
+header h1:before {
+  content: "-";
+  position: absolute;
+  top: 0;
+  left: -20px;
+  transform: rotate(10deg);
+  font-size: 2.2rem;
+  font-weight: 400;
+  color: #fff;
+}
+
+header h1:after {
+  content: "-";
+  position: absolute;
+  top: 0;
+  right: -20px;
+  transform: rotate(-10deg);
+}
+
+header h3 {
+  font-weight: 400;
+  margin-top: 0.5rem;
+  font-size: 13px;
+}
+
+body {
+  font-family: 'Space Mono', monospace;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.7;
+  color: #4d4d4d;
+}
+
+.icons {
+  display: flex;
+  gap: 1.5rem;
+  margin-top: 1rem;
+}
+
+.icon-cogs:before {
+  content: "\e995";
+}
+.icon-stats-dots:before {
+  content: "\e99b";
+}
+.icon-briefcase:before {
+  content: "\e9ae";
+}
+.icon-tree:before {
+  content: "\e9bc";
+}
+.icon-earth:before {
+  content: "\e9ca";
+}
+.icon-embed2:before {
+  content: "\ea80";
+}
+.icon-github:before {
+  content: "\eab0";
+}
+.icon-linkedin2:before {
+  content: "\eaca";
+}
+
+.about {
+  background-color: #fff;
+  padding: 1rem;
+  border-radius: 1rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.about h2 {
+  font-size: 3rem;
+  font-weight: bold;
+  text-align: center;
+  margin: 6rem 0;
+}
+
+.info {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin: 0 auto;
+}
+
+.info li {
+  display: flex;
+  gap: 1rem;
+  justify-content: start;
+}
+
+.info li .first-block {
+  font-size: 1.2rem;
+  font-weight: bolder;
+  width: 40%;
+}
+
+.info li .second-block {
+  font-size: 1.1rem;
+  font-weight: 400;
+  color: rgba(0, 0, 0, 0.6);
+  width: 60%;
+  text-align: start;
+  overflow-wrap: break-word;
+}
+
+.info li .second-block a {
+  color: rgba(0, 0, 0, 0.6);
+  text-decoration: none;
+}
+
+.presentation {
+  margin: 0 auto;
+  background-color: #f5f5f5;
+
+}
+
+.presentation h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin: 5rem 0 1rem 0;
+  color: #000;
+}
+
+.social-icons {
+  display: flex;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.social-icons i {
+  font-size: 1.5rem;
+  color: #000;
+  cursor: pointer;
+  padding: 0.5rem;
+  background-color: #4d4d4d;
+  color: #fff;
+}
+
+.resumen {
+  padding: 1rem;
+  border-radius: 1rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.resumen h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin: 5rem 0 1rem 0;
+  color: #000;
+  text-align: center;
+}
+
+.timeline {
+  list-style: none;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.timeline h3 {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin: 2rem 0;
+  padding: 0 1rem;
+  background-color: #cccccc;
+  border-radius: 1rem;
+  color: #000;
+}
+
+.timeline:before {
+  content: "";
+  display: block;
+  width: 2px;
+  height: 600px;
+  background-color: #cccccc;
+  position: absolute;
+  left: 1.7rem;
+  top: 3rem;
+  z-index: -1;
+}
+
+.timeline-item {
+  display: flex;
+  gap: 2rem;
+  margin: 3rem 0;
+  position: relative;
+}
+
+li i {
+  font-size: 1.5rem;
+  color: #000;
+  cursor: pointer;
+  padding: 1rem;
+  background-color: #274059;
+  border-radius: 50%;
+  text-align: center;
+  margin-top: 1rem;
+  position: relative;
+  z-index: 1;
+}
+
+.timeline-content {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.timeline-content span {
+  font-weight: bold;
+  color: #a5a5a5;
+}
+
+.servicios {
+  background-color: #416e9b;
+  padding: 1rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.servicios h2 {
+  color: #fff;
+  font-size: 3rem;
+  font-weight: bold;
+  margin: 5rem 0 1rem 0;
+}
+
+.servicios-list {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.servicios-item {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: center;
+}
+
+.servicios-item i {
+  font-size: 3rem;
+  color: #416e9b;
+  background-color: #fff;
+  padding: 1rem;
+  
+}
+
+.servicios-item h3 {
+  font-size: 1.2rem;
+  color: #fff;
+}
+
+.servicios-item p {
+  color: #c0c0c0;
+}
+
+.skills {
+  background-color: #f5f5f5;
+  padding: 1rem;
+  text-align: center;
+}
+
+.skills h2 {
+  font-size: 3rem;
+  font-weight: bold;
+  margin: 5rem 0 1rem 0;
+  color: #000;
+}
+
+.skills-container {
+  display: flex;
+  justify-content: center;
+  gap: 4rem;
+  flex-wrap: wrap;
+  padding: 2rem;
+}
+
+.skill {
+  width: 150px;
+  height: 150px;
+  position: relative;
+}
+
+.skill-circle {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background: conic-gradient(#274059 0% var(--percentage), #e0e0e0 var(--percentage) 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.skill-circle::before {
+  content: '';
+  position: absolute;
+  width: 90%;
+  height: 90%;
+  border-radius: 50%;
+  background-color: #f5f5f5;
+}
+
+.skill-circle-inner {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.skill-percentage {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #274059;
+}
+
+.skill-name {
+  font-size: 1rem;
+  color: #274059;
+  margin-top: 0.5rem;
+}
+
+.contacto {
+  background-color: #f5f5f5;
+  padding: 1rem;
+  text-align: center;
+}
+
+.contacto h2 {
+  font-size: 3rem;
+  font-weight: bold;
+  margin: 5rem 0 1rem 0;
+  color: #000;
+}
+
+.contacto form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.contacto form input {
+  padding: 1rem;
+  border-radius: 1rem;
+  border: none;
+  background-color: #f5f5f5;
+}
+
+.contacto form textarea {
+  padding: 1rem;
+  border-radius: 1rem;
+  border: none;
+  background-color: #f5f5f5;
+}
+
+.contacto form button {
+  padding: 1rem;
+  border-radius: 1rem;
+  border: none;
+  background-color: #274059;
+  color: #fff;
+} 
+
+.contacto form button:hover {
+  background-color: #416e9b;
+}
+
+.contacto form input:focus {
+  outline: none;
+}
+
+.contacto form textarea:focus {
+  outline: none;
+} 
+
+.contacto form button:hover {
+  background-color: #416e9b;
+}     
+
+.contacto form input:focus {
+  outline: none;
+}
+
+.contacto form textarea:focus {
+  outline: none;
+}
+
+.contacto form button:hover {
+  background-color: #416e9b;
+}
+
+.contacto form input:focus {
+  outline: none;
+}
+
+.contacto form textarea:focus {
+  outline: none;
+}
+
+.contacto form button:hover {
+  background-color: #416e9b;
+}
+
+@media (min-width: 1024px) {
+
+  main {
+    padding: 0 3rem;
+  }
+  
+  .container {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .table {
+    width: 40%;
+  }
+
+  .presentation {
+    margin-left: 4rem;
+  }
+
+  .presentation h2 {
+    margin: 0;
+    text-align: left;
+  }
+
+  .timeline:before {
+    height: 800px;
+  }
+}
