@@ -174,8 +174,6 @@ body {
 
 .presentation {
   margin: 0 auto;
-  background-color: #f5f5f5;
-
 }
 
 .presentation h2 {
@@ -479,10 +477,14 @@ li i {
 
 @media (min-width: 1024px) {
 
-  main {
-    padding: 0 3rem;
+  .about, .timeline, .servicios, .skills {
+    padding: 1rem 5rem;
   }
-  
+
+  .timeline:before {
+    left: 6.7rem;
+  }
+
   .container {
     display: flex;
     flex-direction: row;
@@ -501,3 +503,27 @@ li i {
     text-align: left;
   }
 }
+
+@media (min-width: 1440px) {
+  .about {
+    padding: 1rem 15rem;
+  }
+
+  .timeline {
+    padding: 1rem 15rem;
+  }
+
+  .timeline:before {
+    left: 16.7rem;
+  }
+
+  .servicios {
+    padding: 1rem 15rem;
+  }
+
+  .skills {
+    padding: 1rem 15rem;
+  }
+  
+}
+
