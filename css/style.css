@@ -1,18 +1,19 @@
 @font-face {
-  font-family: 'icomoon';
-  src:  url('../fonts/icomoon.eot?6rr8wa');
-  src:  url('../fonts/icomoon.eot?6rr8wa#iefix') format('embedded-opentype'),
-    url('../fonts/icomoon.ttf?6rr8wa') format('truetype'),
-    url('../fonts/icomoon.woff?6rr8wa') format('woff'),
-    url('../fonts/icomoon.svg?6rr8wa#icomoon') format('svg');
+  font-family: "icomoon";
+  src: url("../fonts/icomoon.eot?6rr8wa");
+  src: url("../fonts/icomoon.eot?6rr8wa#iefix") format("embedded-opentype"),
+    url("../fonts/icomoon.ttf?6rr8wa") format("truetype"),
+    url("../fonts/icomoon.woff?6rr8wa") format("woff"),
+    url("../fonts/icomoon.svg?6rr8wa#icomoon") format("svg");
   font-weight: normal;
   font-style: normal;
   font-display: block;
 }
 
-[class^="icon-"], [class*=" icon-"] {
+[class^="icon-"],
+[class*=" icon-"] {
   /* use !important to prevent issues with browser extensions that change fonts */
-  font-family: 'icomoon' !important;
+  font-family: "icomoon" !important;
   font-style: normal;
   font-weight: normal;
   font-variant: normal;
@@ -57,7 +58,6 @@ header h1 {
   margin: 1rem 0;
   font-family: "Kaushan Script", cursive;
   transform: rotate(-10deg);
-  
 }
 
 header h1:before {
@@ -86,7 +86,7 @@ header h3 {
 }
 
 body {
-  font-family: 'Space Mono', monospace;
+  font-family: "Space Mono", monospace;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.7;
@@ -314,7 +314,6 @@ li i {
   color: #416e9b;
   background-color: #fff;
   padding: 1rem;
-  
 }
 
 .servicios-item h3 {
@@ -357,7 +356,10 @@ li i {
   width: 100%;
   height: 100%;
   border-radius: 50%;
-  background: conic-gradient(#274059 0% var(--percentage), #e0e0e0 var(--percentage) 100%);
+  background: conic-gradient(
+    #274059 0% var(--percentage),
+    #e0e0e0 var(--percentage) 100%
+  );
   display: flex;
   align-items: center;
   justify-content: center;
@@ -365,7 +367,7 @@ li i {
 }
 
 .skill-circle::before {
-  content: '';
+  content: "";
   position: absolute;
   width: 90%;
   height: 90%;
@@ -433,23 +435,12 @@ li i {
   border: none;
   background-color: #274059;
   color: #fff;
-} 
+  margin-bottom: 4rem;
+}
 
 .contacto form button:hover {
   background-color: #416e9b;
 }
-
-.contacto form input:focus {
-  outline: none;
-}
-
-.contacto form textarea:focus {
-  outline: none;
-} 
-
-.contacto form button:hover {
-  background-color: #416e9b;
-}     
 
 .contacto form input:focus {
   outline: none;
@@ -472,12 +463,142 @@ li i {
 }
 
 .contacto form button:hover {
+  background-color: #416e9b;
+}
+
+.contacto form input:focus {
+  outline: none;
+}
+
+.contacto form textarea:focus {
+  outline: none;
+}
+
+.contacto form button:hover {
+  background-color: #416e9b;
+}
+
+.footer-info {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #274059;
+  color: #fff;
+  padding: 0.5rem;
+  text-align: center;
+  z-index: 1000;
+  transition: transform 0.3s ease-in-out;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.saber-mas-btn {
+  background-color: #416e9b;
+  color: #fff;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.saber-mas-btn:hover {
+  background-color: #5a8ab8;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 2000;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal.active {
+  display: flex;
+}
+
+.modal-content {
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 1rem;
+  max-width: 500px;
+  width: 90%;
+  text-align: center;
+}
+
+.modal-content h3 {
+  color: #274059;
+  margin-bottom: 1.5rem;
+  font-size: 1.2rem;
+}
+
+.tech-table {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin: 1.5rem 0;
+}
+
+.tech-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.8rem;
+  background-color: #f5f5f5;
+  border-radius: 0.5rem;
+}
+
+.tech-item span {
+  font-weight: bold;
+  color: #274059;
+}
+
+.tech-btn {
+  background-color: #416e9b;
+  color: #fff;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.tech-btn:hover {
+  background-color: #5a8ab8;
+}
+
+.close-modal {
+  background-color: #274059;
+  color: #fff;
+  border: none;
+  padding: 0.8rem 1.5rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  margin-top: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.close-modal:hover {
   background-color: #416e9b;
 }
 
 @media (min-width: 1024px) {
-
-  .about, .timeline, .servicios, .skills {
+  .about,
+  .timeline,
+  .servicios,
+  .skills {
     padding: 1rem 5rem;
   }
 
@@ -502,6 +623,10 @@ li i {
     margin: 0;
     text-align: left;
   }
+
+  .contacto form button {
+    margin-bottom: 3rem;
+  }
 }
 
 @media (min-width: 1440px) {
@@ -524,6 +649,4 @@ li i {
   .skills {
     padding: 1rem 15rem;
   }
-  
 }
-

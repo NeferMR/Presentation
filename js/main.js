@@ -14,3 +14,27 @@ document.addEventListener('DOMContentLoaded', function() {
     }, 100);
   });
 });
+
+document.addEventListener('DOMContentLoaded', () => {
+    const saberMasBtn = document.getElementById('saberMasBtn');
+    console.log(saberMasBtn);
+    
+    const modal = document.getElementById('techModal');
+    const closeModal = document.querySelector('.close-modal');
+
+    saberMasBtn.addEventListener('click', () => {
+        console.log("Hola");
+        modal.classList.add('active');
+    });
+
+    closeModal.addEventListener('click', () => {
+        modal.classList.remove('active');
+    });
+
+    // Cerrar modal al hacer clic fuera del contenido
+    modal.addEventListener('click', (e) => {
+        if (e.target === modal) {
+            modal.classList.remove('active');
+        }
+    });
+});
