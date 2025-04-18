@@ -450,34 +450,6 @@ li i {
   outline: none;
 }
 
-.contacto form button:hover {
-  background-color: #416e9b;
-}
-
-.contacto form input:focus {
-  outline: none;
-}
-
-.contacto form textarea:focus {
-  outline: none;
-}
-
-.contacto form button:hover {
-  background-color: #416e9b;
-}
-
-.contacto form input:focus {
-  outline: none;
-}
-
-.contacto form textarea:focus {
-  outline: none;
-}
-
-.contacto form button:hover {
-  background-color: #416e9b;
-}
-
 .footer-info {
   position: fixed;
   bottom: 0;
