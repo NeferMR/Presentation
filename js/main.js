@@ -23,7 +23,6 @@ document.addEventListener('DOMContentLoaded', () => {
     const closeModal = document.querySelector('.close-modal');
 
     saberMasBtn.addEventListener('click', () => {
-        console.log("Hola");
         modal.classList.add('active');
     });
 
