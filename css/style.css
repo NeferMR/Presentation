@@ -396,6 +396,170 @@ li i {
   margin-top: 0.5rem;
 }
 
+.projects-section {
+  background-color: #416e9b;
+  padding: 40px 0;
+}
+
+.projects-title {
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin: 4rem 0;
+  color: white;
+}
+
+.filters-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1.5rem;
+}
+
+.filter-select {
+  border: 1px solid #ccc;
+  border-radius: 0.5rem;
+  padding: 0.5rem;
+  margin-right: 1rem;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 1.5rem;
+  padding: 0 3rem;
+  justify-content: center;
+}
+
+@media (min-width: 640px) {
+  .projects-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .projects-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.project-card {
+  background: white;
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 1rem;
+  cursor: pointer;
+  transition: box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+}
+
+.project-image {
+  border-radius: 0.5rem;
+  margin-bottom: 1rem;
+  width: 20rem;
+  height: 10rem;
+  object-fit: cover;
+  margin: 0 auto 1rem;
+}
+
+.tech-tag {
+  display: inline-block;
+  background-color: #e1f0ff;
+  color: #3b82f6;
+  font-size: 0.75rem;
+  font-weight: 600;
+  margin-right: 0.5rem;
+  padding: 0.25rem 0.75rem;
+  border-radius: 999px;
+}
+
+.modal-overlay-project {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.modal-content-project {
+  display: flex;
+  flex-direction: column;
+  background: white;
+  border-radius: 0.75rem;
+  max-width: 28rem;
+  width: 100%;
+  padding: 1.5rem;
+  position: relative;
+  font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-feature-settings: normal;
+  font-variation-settings: normal;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.modal-content-project p {
+  margin: 0.3rem 0;
+}
+
+.loading-spinner {
+  border: 8px solid #416e9b;
+  border-top: 8px solid #60a5fa;
+  border-radius: 50%;
+  width: 8rem;
+  height: 8rem;
+  animation: spin 1s linear infinite;
+  margin: 0 auto;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.project-view {
+  padding: 1rem;
+  color: #0891b2;
+  font-weight: bold;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+
+.modal-close {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  cursor: pointer;
+  color: #6b7280;
+  font-size: 1.5rem;
+  border: none;
+}
+
+.modal-close:hover {
+  color: #374151;
+}
+.modal-close:focus {
+  outline: none;
+}
+
+.project-link {
+  text-decoration: none;
+  color: #0891b2;
+  font-weight: bold;
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
 .contacto {
   background-color: #dbdbdba6;
   padding: 1rem;
